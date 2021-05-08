@@ -1,25 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Text, TextInput, Modal } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import { Feather, Ionicons } from '@expo/vector-icons'
+import { Feather } from '@expo/vector-icons';
+import {useNavigation} from '@react-navigation/native';
+
 import styles from './styles';
 import New from '../../components/New';
 export default function Home() {
-  const [modalVisible, setModalVisible] = useState(false);
+  const navigation = useNavigation();
+  // const [modalVisible, setModalVisible] = useState(false);
 
-  function showresult() {
+  // function showresult() {
 
-    if (!modalVisible) {
-      setModalVisible(true);
-    }
-    else {
-      setModalVisible(false);
-    }
+  //   if (!modalVisible) {
+  //     setModalVisible(true);
+  //   }
+  //   else {
+  //     setModalVisible(false);
+  //   }
 
 
-    console.log('aq');
+  //   console.log('aq');
 
-  }
+  // }
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}
@@ -56,12 +59,29 @@ export default function Home() {
             cover={require('../../assets/house1.jpg')}
             name="Casa de praia"
             description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
-            onPress={() => { }}
-            showInfo={showresult}
+            onPress={() => navigation.navigate('Detail')}
+          // showInfo={showresult}
           />
-          <>
 
-          </>
+          <New
+
+            cover={require('../../assets/house2.jpg')}
+            name="Casa Floripa"
+            description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
+            onPress={() => navigation.navigate('Detail')}
+          // showInfo={showresult}
+          />
+
+          <New
+
+            cover={require('../../assets/house3.jpg')}
+            name="Rancho SP"
+            description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
+            onPress={() => navigation.navigate('Detail')}
+          // showInfo={showresult}
+          />
+
+          {/*           
           <Modal
             transparent={true}
             visible={modalVisible}
@@ -96,7 +116,7 @@ A fazenda ficará disponível para a família que se hospedar!
             </Text>
             </ScrollView>
             </View>
-          </Modal>
+          </Modal> */}
 
         </ScrollView>
       </View>

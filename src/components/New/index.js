@@ -7,8 +7,7 @@ import styles from './styles';
 
 export default function New(props) {
   return (
-      <View style={styles.container}>
-        <TouchableOpacity onPress={props.onPress}>
+        <TouchableOpacity onPress={props.onPress} style={styles.container}>
           <Image
             source={props.cover}
             style={styles.cover}
@@ -26,18 +25,20 @@ export default function New(props) {
             <View style={{ width: '80%' }}>
               <Text style={styles.price}>R$ 1.204,90</Text>
             </View>
-
+            <View style={{width:'20%'}}>
+          <Ionicons name="ios-add-circle" size={24} color="black" />
+            </View>
           </View>
-        </TouchableOpacity>
-
+          {/* 
         <Ionicons
         style={{textAlign:'right'}}
           name="information-circle-outline"
           size={24}
           color="#000"
           onPress={props.showInfo}
-        />
-      </View>
+        /> */}
+        </TouchableOpacity>
+
 
   )
 }

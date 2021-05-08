@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   container: {
     margin: 20,
     backgroundColor: '#FFF',
-    height: 270,
+    height: 250,
     width: 200,
     elevation: 2,
     borderRadius: 10,
@@ -40,6 +40,22 @@ const styles = StyleSheet.create({
   badge:{
     color:'red',
     fontSize:9,
+    fontFamily:'Montserrat_700Bold',
+
+  },
+  description:{
+    fontFamily:'Montserrat_400Regular',
+    fontSize:9,
+    color:'#4f4a4a'
+  },
+  footer:{
+    flexDirection:'row',
+    marginTop:5,
+    alignItems:'center',
+    width:'100%'
+  },
+  price:{
+    fontSize:15,
     fontFamily:'Montserrat_700Bold',
 
   }

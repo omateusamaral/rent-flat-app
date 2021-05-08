@@ -34,7 +34,7 @@ function Routes() {
           }}
         />
         <Stack.Screen
-          name="detail"
+          name="Detail"
           component={Detail}
           options={{
             title: 'Detalhe',

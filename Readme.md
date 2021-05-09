@@ -4,7 +4,7 @@
 
 <h2>Qual o motivo de criar essa aplicação 🤔? </h2>
 <p>
-É uma aplicação simples, porém regeada de conteúdo importantes para apps reais
+É uma aplicação simples, porém recheada de conteúdo importantes para apps reais,
 estou utilizando esse repositório como "save" 😂😂 para voltar no futuro.
 </p>
 

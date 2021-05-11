@@ -2,10 +2,12 @@ import React from 'react';
 import { View, Text, TextInput, Modal } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 
 import styles from './styles';
 import New from '../../components/New';
+import House from '../../components/House';
+import Recommended from '../../components/Recommended';
 export default function Home() {
   const navigation = useNavigation();
   // const [modalVisible, setModalVisible] = useState(false);
@@ -48,40 +50,39 @@ export default function Home() {
         </Text>
       </View>
 
-      <View>
-        <ScrollView
-          horizontal={true}
-          showsHorizontalScrollIndicator={false}
-          style={{ paddingHorizontal: 15 }}>
+      <ScrollView
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        style={{ paddingHorizontal: 15 }}>
 
-          <New
+        <New
 
-            cover={require('../../assets/house1.jpg')}
-            name="Casa de praia"
-            description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
-            onPress={() => navigation.navigate('Detail')}
-          // showInfo={showresult}
-          />
+          cover={require('../../assets/house1.jpg')}
+          name="Casa de praia"
+          description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
+          onPress={() => navigation.navigate('Detail')}
+        // showInfo={showresult}
+        />
 
-          <New
+        <New
 
-            cover={require('../../assets/house2.jpg')}
-            name="Casa Floripa"
-            description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
-            onPress={() => navigation.navigate('Detail')}
-          // showInfo={showresult}
-          />
+          cover={require('../../assets/house2.jpg')}
+          name="Casa Floripa"
+          description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
+          onPress={() => navigation.navigate('Detail')}
+        // showInfo={showresult}
+        />
 
-          <New
+        <New
 
-            cover={require('../../assets/house3.jpg')}
-            name="Rancho SP"
-            description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
-            onPress={() => navigation.navigate('Detail')}
-          // showInfo={showresult}
-          />
+          cover={require('../../assets/house3.jpg')}
+          name="Rancho SP"
+          description="Casa nova uma quadra do mar, lugar seguro e monitorado 24horas."
+          onPress={() => navigation.navigate('Detail')}
+        // showInfo={showresult}
+        />
 
-          {/*           
+        {/*           
           <Modal
             transparent={true}
             visible={modalVisible}
@@ -118,8 +119,65 @@ A fazenda ficará disponível para a família que se hospedar!
             </View>
           </Modal> */}
 
-        </ScrollView>
+      </ScrollView>
+
+      <View style={{
+        flexDirection: 'row',
+        marginBottom: 10,
+        alignItems: 'center'
+      }}>
+        <Text style={[styles.title, { marginTop: 20 }]}>
+          Próximo de você
+        </Text>
       </View>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={{ paddingHorizontal: 15 }}>
+
+        <House
+          cover={require('../../assets/house4.jpg')}
+          description="Casa moderna"
+          price="R$ 450,90"
+        />
+        <House
+          cover={require('../../assets/house5.jpg')}
+          description="Casa moderna"
+          price="R$ 690,70"
+        />
+        <House
+          cover={require('../../assets/house6.jpg')}
+          description="Casa moderna"
+          price="R$ 810,10"
+        />
+      </ScrollView>
+      <Text style={[styles.title, { marginTop: 20 }]}>
+        Dica do dia
+      </Text>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={{ paddingHorizontal: 15 }}>
+
+        <Recommended
+          cover={require('../../assets/house1.jpg')}
+          house="Casa Floripa"
+          offer="20%"
+        />
+
+        <Recommended
+          cover={require('../../assets/house4.jpg')}
+          house="Casa São Paulo"
+          offer="15%"
+        />
+
+        <Recommended
+          cover={require('../../assets/house6.jpg')}
+          house="Casa de Praia"
+          offer="10%"
+        />
+
+      </ScrollView>
     </ScrollView>
   );
 }

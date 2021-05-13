@@ -27,7 +27,9 @@ Esse projeto foi desenvolvido utilizando essas principais tecnologias:
 
 <h2>Quero testar, como posso testar 🤔?</h2>
 
-<p>Foi gerado um apk para android, para ser testado esta no repositório, é só baixar clicando nele e instalar em seu dispositivo</p>
+<p>Aqui está o link de download do apk: <a href="https://expo.io/artifacts/5322f3d0-d578-4b7e-b331-c5b458cc9c3f">Download<a>
+apenas para Android
+</p>
 
 
 

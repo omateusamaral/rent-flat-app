@@ -1,6 +1,6 @@
 # <h1> RentFlet - App   </h1> 
 
-<h3>APP em construção 🛠️</h3>
+<h3>APP SIMPLES DE ALUGAR CASA</h3>
 
 <h2>Qual o motivo de criar essa aplicação 🤔? </h2>
 <p>
@@ -10,11 +10,11 @@ estou utilizando esse repositório como "save" 😂😂 para voltar no futuro.
 
 <hr/>
 
-<h2>Quais tecnologias está sendo utilizada no momento?</h2>
+<h2>Quais tecnologias foram usadas?</h2>
 
 ## 🚀 Tecnologias
 
-Esse projeto esta sendo desenvolvido utilizando essas principais tecnologias:
+Esse projeto foi desenvolvido utilizando essas principais tecnologias:
 
 - [ReactNative](https://reactnative.dev/)
 - [EXPO](https://expo.io/)
@@ -27,7 +27,7 @@ Esse projeto esta sendo desenvolvido utilizando essas principais tecnologias:
 
 <h2>Quero testar, como posso testar 🤔?</h2>
 
-<p>O app está em desenvolvimento então não gerei o apk, então ainda não é possível testar </p>
+<p>Foi gerado um apk para android, para ser testado esta no repositório, é só baixar clicando nele e instalar em seu dispositivo</p>
 
 
 
@@ -35,11 +35,12 @@ Esse projeto esta sendo desenvolvido utilizando essas principais tecnologias:
 
 Vídeo do APP     
 :-------------------------:
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/37390930/117556609-1cf34580-b041-11eb-9670-f7d255457232.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/37390930/118196656-c1033500-b423-11eb-8ac5-6ce6d569073c.gif)
+
 
 Imagem APP
 :-------------------------:
-|![WhatsApp Image 2021-05-08 at 21 03 37](https://user-images.githubusercontent.com/37390930/117556589-e9b0b680-b040-11eb-87ec-4eac69577bbc.jpeg)
+![Captura de tela de 2021-05-13 19-45-56](https://user-images.githubusercontent.com/37390930/118196718-df693080-b423-11eb-91aa-a4dcc6b9fd8c.png)
 
 
 
